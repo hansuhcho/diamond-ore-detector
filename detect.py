@@ -1,4 +1,3 @@
-"""Find diamond ore faces with multiscale, rotated template matching."""
 import argparse
 import json
 from pathlib import Path
@@ -9,7 +8,6 @@ ROOT = Path(__file__).resolve().parent
 
 
 def find_ore(image, template, threshold=0.72):
-    # Downsample large screenshots to keep CPU processing manageable.
     scale = min(1.0, 1000 / image.shape[1])
     small = cv2.resize(image, None, fx=scale, fy=scale)
     gray = cv2.cvtColor(small, cv2.COLOR_BGR2GRAY)
@@ -28,7 +26,6 @@ def find_ore(image, template, threshold=0.72):
         duplicate = False
         for _, a, b, other_size in selected:
             intersection = max(0, min(x+size, a+other_size)-max(x, a)) * max(0, min(y+size, b+other_size)-max(y, b))
-            # Suppress multiple scales/rotations matching the same face.
             if intersection / min(size*size, other_size*other_size) > 0.35:
                 duplicate = True
                 break
