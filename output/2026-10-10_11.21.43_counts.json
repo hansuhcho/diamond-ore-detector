@@ -1,0 +1,52 @@
+{
+  "source": "2026-10-10_11.21.43.png",
+  "visible_face_count": 5,
+  "threshold": 0.72,
+  "detections": [
+    {
+      "box_xyxy": [
+        814,
+        655,
+        1088,
+        929
+      ],
+      "match_score": 0.9287
+    },
+    {
+      "box_xyxy": [
+        1357,
+        660,
+        1631,
+        934
+      ],
+      "match_score": 0.925
+    },
+    {
+      "box_xyxy": [
+        806,
+        1201,
+        1080,
+        1475
+      ],
+      "match_score": 0.9237
+    },
+    {
+      "box_xyxy": [
+        558,
+        115,
+        819,
+        376
+      ],
+      "match_score": 0.8674
+    },
+    {
+      "box_xyxy": [
+        1636,
+        123,
+        1910,
+        397
+      ],
+      "match_score": 0.8658
+    }
+  ]
+}

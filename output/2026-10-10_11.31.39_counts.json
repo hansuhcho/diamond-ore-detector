@@ -1,0 +1,25 @@
+{
+  "source": "2026-10-10_11.31.39.png",
+  "visible_face_count": 2,
+  "threshold": 0.72,
+  "detections": [
+    {
+      "box_xyxy": [
+        804,
+        320,
+        1055,
+        571
+      ],
+      "match_score": 0.9539
+    },
+    {
+      "box_xyxy": [
+        1569,
+        832,
+        1820,
+        1083
+      ],
+      "match_score": 0.9063
+    }
+  ]
+}
